@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            width: 200px;
+            height: 200px;
+            background-color: lightskyblue;
+            border: 2px solid blue;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="id">
+    </div>
+    <input type="text" id="input" placeholder="Type something here...">
+    <input type="reset" id="reset" value="reset">
+    <input type="submit" id="submit" value="submit">
+    <script>
+        let a=document.getElementById('input');
+        let b=document.getElementById('reset');
+        let c= document.getElementById('submit');
+        b.addEventListener("click",function () {
+            a.value="";
+        });
+        c.addEventListener("click",function(event) {
+        event.preventDefault();
+        alert("Form submitted with value: " + a.value);
+        });
+    </script>
+</body>
+</html>

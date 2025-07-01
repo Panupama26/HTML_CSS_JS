@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgreen;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Style Demo</h1>
+    <br>
+    <p>This is a paragraph demonstrating the styles applied to this document.</p>
+    <button onclick="f()">Change Background Color</button>
+    <script>
+        function f() {
+            document.getElementsByTagName("h1")[0].style.fontsize="50px";
+            if (document.body.style.backgroundColor === "lightblue") {
+                document.body.style.backgroundColor = "lightgreen";
+            }
+            else if (document.body.style.backgroundColor === "lightgreen"){
+                document.body.style.backgroundColor = "red";
+        }
+        else {
+             document.body.style.backgroundColor = "lightblue";
+        }
+    }
+        document.getElementsByTagName("h1")[0].style.color = "black";
+    </script>
+</body>
+</html>

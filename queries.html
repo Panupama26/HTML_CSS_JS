@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="queryselectorall">
+        <h1>Heading tag 1</h1>
+        <p>
+        </p>
+    </div>
+    <button onclick="f()">Click me</button>
+    <script>
+        function f() {
+            const a = document.querySelectorAll(".queryselectorall");
+            a.forEach((element) => {
+                const newHeading = document.createElement("h2");
+                newHeading.innerText = "New Heading";
+                element.appendChild(newHeading);
+                const newParagraph = document.ATTRIBUTE_NODEcreateElement("p");
+                newParagraph.innerText = "This is a new Paragraph added to the queryselectorall class.";
+                element.appendChild(newParagraph);
+            });
+            }
+    </script>
+</body>
+</html>
